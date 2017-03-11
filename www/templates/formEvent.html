@@ -1,0 +1,34 @@
+<ion-view  view-title="Social App!" >
+ <ion-content>
+	<form (ngSubmit)="logForm()">
+		<spam>Nombre del evento</spam>
+		<input type="text" placehover="Agrega el nombre">
+		<spam>Descripción del evento</spam>
+		<input type="text" placehover="">
+		
+		<spam>Fecha</spam>
+		<input type="date">
+		<spam>Hora de inicio</spam>
+		<input type="hour">
+		<spam>Hora de Fin</spam>
+		<input type="hour">
+		<spam>Ciudad</spam>
+		<select type="text">
+			<option value="Puebla"></option>
+		</select>
+		<spam>Razon social</spam>
+		<select type="text">
+			<option value="Ambiente"></option>
+			<option value="Animales"></option>
+			<option value="Limpieza comunitaria"></option>
+			<option value="Viveres"></option>
+			<option value="Damnificados"></option>
+			<option value="Comunidades"></option>
+			<option value="Tercera edad"></option>
+		</select>
+		<input type="submit" class="button button-block button-royal">
+	</form>
+	<h1>Prueba</h1>
+
+ </ion-content>
+ </ion-view>

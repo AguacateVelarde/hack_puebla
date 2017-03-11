@@ -1,0 +1,14 @@
+<ion-view hide-back-button="true" view-title="Perfil">
+
+  <ion-content class="padding">
+  <div class="container item-profile" ng-repeat="user in users">
+  	<div class="item-avatar">
+  		<img  src="{{ user.image }}" alt="{{ user.name }}">
+  	</div>
+  	<h2>{{ user.name }}</h2>
+  	<img src="{{ user.star.image }}" alt="{{ user.star.number }} estrellas">
+  	
+
+  </div>
+  </ion-content>
+</ion-view>

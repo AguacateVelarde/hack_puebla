@@ -1,0 +1,86 @@
+@font-face{
+  font-family: 'Merriweather', serif;
+}
+@font-face{
+  src:url('Lemon Tuesday.otf');
+  font-family: "Lemon";
+}
+@font-face{
+  src:url('DroidSans.ttf');
+  font-family: "Droid";
+}
+body {
+ font-family: Droid; !important
+}
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: Droid;
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+
+ion-slide:nth-child(1){
+
+}
+ion-slide:nth-child(2){
+  background-image:url('../img/back2.jpg');
+   width: 100%;
+  height: 100%;
+}
+ion-slide:nth-child(3){
+  background-image:url('../img/back3.jpg');
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.margin{
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.cabecera{
+  margin-top:80px;
+font-family: Lemon;
+font-size: 60px;
+color: #886aea;
+}

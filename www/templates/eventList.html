@@ -1,0 +1,23 @@
+<ion-view enable-menu-with-back-views="false" view-title="Social App!" >
+ <ion-nav-buttons side="right"> 
+          <button class="button button-positive button-clear"
+                  ng-click="next()" ng-show="slideIndex != 2">
+            <i class="ion-drag"></i>
+          </button>
+  </ion-nav-buttons>
+  <ion-nav-view name="menuContent"></ion-nav-view>
+	<ion-content>
+		
+
+		<div ng-repeat="item in testDatabase" >
+			<item class="item ion-social-twitter  ">
+				<span>{{ item.date }}</span>
+				<h1>{{ item.name }}</h1>
+				<p>{{ item.description }}</p>
+			</item>
+		</div>
+	
+
+
+	</ion-content>
+</ion-view>

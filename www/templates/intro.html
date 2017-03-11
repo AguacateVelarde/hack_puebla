@@ -1,0 +1,53 @@
+<ion-view  view-title="Social App!" >
+        <ion-nav-buttons side="left" >
+         
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="previous()" ng-show="slideIndex > 0">
+            Anterior
+          </button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right"> 
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="next()" ng-show="slideIndex != 2">
+            Siguiente
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-show="slideIndex == 2">
+            ¡Iniciar la App!
+          </button>
+        </ion-nav-buttons>
+        <ion-slide-box on-slide-changed="slideChanged(index)">
+          <ion-slide>
+          <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+   <source src="img/back1.webm" type="video/webm">
+        </video>
+            <h3 class="cabecera">Social App!</h3>
+           <button class="button button-large button-assertive margin" ng-click="startApp()" ng-show="!slideIndex">¡Comenzar! </button>
+            <p>
+              We've worked super hard to make you happy.
+            </p>
+            <p>
+              But if you are angry, too bad.
+            </p>
+
+          </ion-slide>
+          <ion-slide>
+            <h3>Using Awesome</h3>
+            
+            <div id="list">
+              <h5>Just three steps:</h5>
+              <ol>
+                <li>Be awesome</li>
+                <li>Stay awesome</li>
+                <li>There is no step 3</li>
+              </ol>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <h3>Any questions?</h3>
+            <p>
+              Too bad!
+            </p>
+          </ion-slide>
+        </ion-slide-box>
+      </ion-view>

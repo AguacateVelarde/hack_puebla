@@ -1,0 +1,27 @@
+<ion-view hide-back-button="true" view-title="Inicia sesión">
+
+  <ion-content class="padding">
+                <form ng-submit="submit()">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Usuario</span>
+                        <input type="text" name="username" placeholder="Agrega tu usuario" ng-model="data.username">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Contraseña</span>
+                        <input type="password" name="username" placeholder="Contraseña" ng-model="data.password">
+                    </label>
+
+                    <input class="button button-block button-positive" type="submit" name="submit" value="Login">
+                </form>
+                  <a href="#/registro"><button class="button button-block button-assertive">Registrarse</button></a>
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        Respuesta: <b ng-bind="response"></b>
+                    </div>
+                </div>
+
+    <button class="button" ng-click="toIntro()">Regresar al tutorial</button>
+    <a href="#/evenList"><button class="button button-light">Comienza</button></a>
+    <a href="#/user"><button class="button button-light">Usuario</button></a>
+  </ion-content>
+</ion-view>
